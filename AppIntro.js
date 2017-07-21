@@ -107,6 +107,12 @@ const defaulStyles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  imageContainer: {
+    flex: 1.4,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    backgroundColor: 'transparent'
+  }
 }
 
 export default class AppIntro extends Component {
@@ -258,7 +264,7 @@ export default class AppIntro extends Component {
     const pageView = (
       <View style={[this.styles.slide, { backgroundColor }]} showsPagination={false} key={index}>
         {/*<Animated.View style={[this.styles.header, ...AnimatedStyle1.transform]}>*/}
-        <View style={{flex: 1.4, flexDirection: 'column', justifyContent: 'flex-start', backgroundColor: 'transparent'}}>
+        <View style={this.styles.imageContainer}>
           <Image style={imgStyle} source={imgSource} />
         </View>
         {/*</Animated.View>*/}
