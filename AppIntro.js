@@ -46,20 +46,17 @@ const defaulStyles = {
   title: {
     color: '#000',
     fontSize: 18,
-    fontFamily : 'Raleway-SemiBold',
     paddingBottom: 16,
     textAlign: 'center',
   },
   description: {
     color: '#000',
     fontSize: 16,
-    fontFamily : 'Raleway-Regular',
     textAlign: 'center',
   },
   controllText: {
     color: '#fff',
     fontSize: 17,
-    fontFamily : 'Raleway-SemiBold',
   },
   dotStyle: {
     backgroundColor: 'rgba(255,255,255,.3)',
@@ -103,7 +100,6 @@ const defaulStyles = {
   nextButtonText: {
     fontSize: 17,
     fontWeight: 'normal',
-    fontFamily : 'Raleway-SemiBold',
   },
   full: {
     height: 80,
