@@ -256,6 +256,7 @@ export default class AppIntro extends Component {
     backgroundColor,
     fontColor,
     level,
+    imgContainer
   }) => {
     const AnimatedStyle1 = this.getTransform(index, 10, level);
     const AnimatedStyle2 = this.getTransform(index, 8, level);
@@ -264,7 +265,7 @@ export default class AppIntro extends Component {
     const pageView = (
       <View style={[this.styles.slide, { backgroundColor }]} showsPagination={false} key={index}>
         {/*<Animated.View style={[this.styles.header, ...AnimatedStyle1.transform]}>*/}
-        <View style={this.styles.imageContainer}>
+        <View style={[this.styles.imageContainer, imgContainer]}>
           <Image style={imgStyle} source={imgSource} />
         </View>
         {/*</Animated.View>*/}
