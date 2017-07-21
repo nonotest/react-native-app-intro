@@ -258,7 +258,7 @@ export default class AppIntro extends Component {
     const pageView = (
       <View style={[this.styles.slide, { backgroundColor }]} showsPagination={false} key={index}>
         {/*<Animated.View style={[this.styles.header, ...AnimatedStyle1.transform]}>*/}
-        <View style={{flex: 1.4, flexDirection: 'column', justifyContent: 'flex-start', backgroundColor: '#fff'}}>
+        <View style={{flex: 1.4, flexDirection: 'column', justifyContent: 'flex-start', backgroundColor: 'transparent'}}>
           <Image style={imgStyle} source={imgSource} />
         </View>
         {/*</Animated.View>*/}
