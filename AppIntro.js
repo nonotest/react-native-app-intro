@@ -148,9 +148,9 @@ export default class AppIntro extends Component {
     let x = 0
     if (state.dir === 'x') x = diff * state.width
     if (Platform.OS === 'ios') {
-      context.refs.scrollView.scrollTo({ y: 0, x })
+      context.scrollView.scrollTo({ y: 0, x })
     } else {
-      context.refs.scrollView.setPage(diff)
+      context.scrollView.setPage(diff)
       context.onScrollEnd({
         nativeEvent: {
           position: diff
