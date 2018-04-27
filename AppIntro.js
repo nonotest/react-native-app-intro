@@ -390,6 +390,7 @@ export default class AppIntro extends Component {
             this.state.isScrolling = false
           }}
           onScroll={Animated.event([{ x: this.state.parallax }])}
+          containerStyle={this.styles.containerStyle}
         >
           {pages}
         </Swiper>
