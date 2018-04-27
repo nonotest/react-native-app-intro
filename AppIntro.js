@@ -389,7 +389,9 @@ export default class AppIntro extends Component {
             this.props.onSlideChange(state.index, state.total)
             this.state.isScrolling = false
           }}
-          onScroll={Animated.event([{ x: this.state.parallax }])}
+          onScroll={Animated.event([
+            { nativeEvent: { contentOffset: { x: this.state.parallax } } },
+          ])}
           containerStyle={this.styles.containerStyle}
         >
           {pages}
