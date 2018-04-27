@@ -28,6 +28,6 @@
   "homepage": "https://github.com/fuyaode/react-native-app-intro#readme",
   "dependencies": {
     "assign-deep": "^0.4.5",
-    "react-native-swiper": "FuYaoDe/react-native-swiper#8181076"
+    "react-native-swiper": "leecade/react-native-swiper#master"
   }
 }
